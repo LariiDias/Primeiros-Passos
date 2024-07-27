@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos como HTML</title>
+</head>
+<body>
+    <h1>Módulo I - Primeiros Passos com HTML</h1>
+    <hr/>
+
+    <h2 id="indice">Índice</h2>
+    <ol>
+        <li><a href="#história">A história dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#html">HTML: Linguagem de Marcação de Hipertexto</a></li>
+        <li><a href="#lista">A diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ol>
+
+    <h3 id="história">A história dos computadores</h3>
+    <p>A palavra "computador" vem di verbo "computar" que, por sua vez, significa "calcular". Sendo assim, podemos pensar que a criação de computadores começa na idade antiga, já que a relação de contar já intrigava os homens.</p>
+    <p>Dessa forma, uma das principais máquinas de computar doi o "ábaco", instrumento mecânico de origem chinesa criado no século V a.C. Assim, ele é considerado o "primeiro computador", uma espécie de calculadora que realizava operações algébricas.</p>
+    <p>Depois do ábaco foram criados outros aparelhos, também analógicos, capazes de realizar contagens, como os ossos de napier, a pascalina (primeira calculadora mecânica do mundo), a máquina de Leibniz, o tear automático, a máquina de diferenças, a máquina analítica de Babbage, o tabulador automático, entre outros.</p>
+    <p>Todos esses dispositivos são resultado de melhorias. Em outras palavras, se um dispositivo falhou em realizar uma determinada tarefa, outro dispositivo, foi criado para atender às suas necessidades. Este desenvolvimento não foi um processo tão rápido como é hoje, pois os recursos eram mais limitados na época.</p>
+    <p>O computador, tal que conhecemos hoje, passou por diversas transformações e foi se aperfeiçoando ao longo do tempo, acompanhando o avanço das áreas da matemática, engenharia, eletrônico. De acorco com os sistemas e ferramentas utilizados, a história da computação está dividida em quatro períodos.</p>
+    <ul>
+        <li><strong>Primeira Geração (1951 - 1959)</strong></li>
+        <blockquote>Um exemplo de computador da primeira geração é o ENIAC <i>(Eletronic Numerical Integrator and Computer)</i> que consumia cerca de 200 quilowatts e possuía 19.000 válvulas.</blockquote>
+        <li><strong>Segunda Geração (1959 - 1965)</strong></li>
+        <blockquote>Ainda com dimensões muito grandes, os computadores da segunda geração funcionavam por meio de transistores, os quais substituíram as válvulas que eram maiores e mais lentas. Nesse período já começam a se espalhar o uso comercial.</blockquote>
+        <li><strong>Terceira Geração (1956 - 1975)</strong></li>
+        <blockquote>Os computadores da terceira geração funcionavam por circuitos integrados. Esses substituíram os ransistores e já apresentavam uma dimensão menor e maior capacidade de processamento. Foi nesse período que os chips foram criados e a utilização de computadores pessoais começou.</blockquote>
+        <li><strong>Quarta Geração (1975 - até os dias atuais)</strong></li>
+        <blockquote>Com o desenvolvimento da tecnologia da informação, os computadores diminuem de tamanho, aumentam a velocidade e capacidade de processamento de dados. São incluídos os microprocessadores com gasto cada vez menor de energia. Além disso, surgem os softwares integrados e a partir da virada do milênio, começam a surgir os computadores de mão. Ou seja, os smartphones, iPod, iPad e tablets, que incluem conexão móvel com navegação na web.</blockquote>
+    </ul>
+    <h3 id="clients">O que são <i>Clients</i>?</h3>
+    <p>O cliente é mais conhecido como navegador e quem sempre inia a comunicação com o servidor. Quando acessamos um site pelo navegador, uma requisição é disparada pela internet para o computador no qual esse site está hospedado.</p>
+    <p>Chamamos as aplicações que agem em nome do usuário, assim como o nevegador, de <mark>user-agent</mark>. A figura a seguir, demonstra esse fluxo de dados:</p>
+    <center><img src="https://arquivo.devmedia.com.br/devcast/requisicao_40115/img/comunicacao.png"></center>
+    <p>Após enviar uma requisição, o <u>user-agent</u> aguarda até que haja uma resposta do servidor e então a comunicação se encerra. Para obter um novo recurso do servidor o cliente deve iniciar uma nova requisição.</p>
+    <h3 id="servers">O que são <i>Servers</i>?</h3>
+    <p>O <u>papel do servidor web</u> é receber uma requisição e devolver uma resposta para o cliente. O servidor é um ou mais computadores com um único endereço como https://web.dio.me/. Nestes computadores podem ser hospedados documentos, imagens, áudios, vídeos, etc.</p>
+    <p>Geralemente o servidor também hospeda programas que atendem as requisições dos clientes e as processam. Chamamos esses programas de <mark>web server</mark>, ou servidor web.</p>
+    <p>É com um web server que nos comunicamos, sendo o computador no qual ele está instalado parte da infraestrutura que o conecta a internet.</p>
+    <p>O web server geralmente é capaz de executar aplicações escritas em linguagens como <strong><u>PHP</u></strong>, <strong><u>C#</u></strong>, <strong><u>Java</u></strong>, etc.</p>
+    <center><img src="https://arquivo.devmedia.com.br/devcast/requisicao_40115/img/comunicacao_servidor.png"></center>
+    <p>Por exemplo, um servidor executando o PHP pode delegar a esse programa a tarefa de atender as requisições criando páginas <strong><u>HTML</u></strong> a partir de scripts escritos nessa linguagem.</p>
+    <h3 id="html">HTML: Linguagem de Marcação de Hipertexto</h3>
+    <p><strong>HTML</strong> é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
+    <p>"Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.</p>
+    <p>O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um navegador da Web.</p>
+    <p>Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome do elemento entre "<" e ">". O nome de um elemento dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura. Por exemplo, a tag <mark>title</mark> pode ser escrita como <mark>Title</mark>, <mark>TITLE</mark> ou de qualquer outra forma.</p>
+    <h3 id="lista">A diferença entre listas ordenadas e não ordenadas</h3>
+    <p>A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a <strong>lista ordenada</strong> enumera os elementos; <strong>a lista não-ordenada</strong> coloca marcadores antes de cada elemento.</p>
+    <blockquote><strong>DICA:</strong>O uso de números induz o leitor a esperar uma seqüência coerentemente ordenada de itens. O uso de marcadores induz o leitor a esperar uma coleção de itens (que não precisa ter, necessariamente, uma ordem).</blockquote>
+    <p><u>Lista ordenada</u>: Uma lista ordenada é delimitada pelas etiquetas <i>< OL></i> e <i></ OL></i> (<strong>O</strong>rdered <strong>L</strong>ist). Cada item da lista é delimitado pelas etiquetas <i>< LI></i> e <i>< /LI></i> (<strong>L</strong>ist <strong>I</strong>tem).</p>
+    <p><u>Lista não-ordenada</u>: A estrutura da lista não-ordenada é semelhante a da lista ordenada -  porém, ao invés de ser construída com o elemento OL, é construída com o elemento UL (<strong>U</strong>nordered <strong>L</strong>ist).</p>
+
+
+    <h3 id="links">Links de Referências</h3>
+    <ul>
+    <li><a href="http://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" title="Clique aqui e confira" target="_blank">http://www.todamateria.com.br/historia-e-evolucao-dos-computadores/</a></li>
+    <li><a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215#:~:text=HTTP%20%28Hypertext%20Transfer%20Protocol%29%20%C3%A9%20o,clientes%20e%20servidores%20atrav%C3%A9s%20da%20internet.&text=HTTP%20%28Hypertext%20Transfer%20Protocol%29,servidores%20atrav%C3%A9s%20da%20internet.&text=Transfer%20Protocol%29%20%C3%A9%20o,clientes%20e%20servidores%20atrav%C3%A9s" title="Clique aqui e confira" target="_blank">https://www.devmedia.com.br/http-cliente-e-servidor/41215#:~:text=HTTP%20%28Hypertext%20Transfer%20Protocol%29%20%C3%A9%20o,clientes%20e%20servidores%20atrav%C3%A9s%20da%20internet.&text=HTTP%20%28Hypertext%20Transfer%20Protocol%29,servidores%20atrav%C3%A9s%20da%20internet.&text=Transfer%20Protocol%29%20%C3%A9%20o,clientes%20e%20servidores%20atrav%C3%A9s</a></li>
+    <li><a href="http://www.nce.ufrj.br/ginape/cursohtml/conteudo/listas/ordenada.htm#:~:text=A%20principal%20diferen%C3%A7a%20entre%20a%20lista%20ordenada%20e,a%20esperar%20uma%20seq%C3%BC%C3%AAncia%20coerentemente%20ordenada%20de%20itens." title="Clique aqui e confira" target="_blank">http://www.nce.ufrj.br/ginape/cursohtml/conteudo/listas/ordenada.htm#:~:text=A%20principal%20diferen%C3%A7a%20entre%20a%20lista%20ordenada%20e,a%20esperar%20uma%20seq%C3%BC%C3%AAncia%20coerentemente%20ordenada%20de%20itens.</a></li>
+    </ul>
+    <p><a href="#indice">Voltar ao início</a></p>
+</html>
